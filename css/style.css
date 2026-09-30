@@ -5,10 +5,70 @@
 }
 
 body{
-
+background-color: #f7f4dd;
 }
 
-header{
-
+.navbar{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #fffcf2;
+    padding: 20px;
 }
 
+.links{
+    display: flex;
+    gap: 2rem;
+    margin: 10px;
+}
+
+ul{ 
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+}
+
+.bio-hero{
+    margin: 0px auto;
+    background-color: #ffe8d6;
+}
+
+.card-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card1{
+    background-color:#ae2012 ;
+    padding: 20px;
+}
+
+.card2{
+    background-color:#ca6702 ;
+    padding: 20px;
+}
+
+.card3{
+    background-color:#8cb369 ;
+    padding: 20px;
+}
+
+@media (min-width: 768px){
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card-grid{
+    flex-direction: row;
+    }
+
+    .card{
+        flex-grow: 1;
+    }
+}
+
+footer{
+    text-align: center;
+}
