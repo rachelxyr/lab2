@@ -14,10 +14,12 @@ background-color: #f7f4dd;
     flex-direction: column;
     background-color: #fffcf2;
     padding: 20px;
+    margin-bottom: 15px;
 }
 
 .links{
     display: flex;
+    flex-direction: column;
     gap: 2rem;
     margin: 10px;
 }
@@ -25,34 +27,48 @@ background-color: #f7f4dd;
 ul{ 
     list-style-type: none;
 }
+
 ul li a{
     text-decoration: none;
+    color: black;
 }
 
 .bio-hero{
-    margin: 0px auto;
-    background-color: #ffe8d6;
+    flex-basis: 100%;
+    background-color: #faf0ca;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    padding: 15px;
+
 }
 
 .card-grid{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 20px;
 }
 
+.card{
+    flex-basis: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
 .card1{
     background-color:#ae2012 ;
-    padding: 20px;
 }
 
 .card2{
     background-color:#ca6702 ;
-    padding: 20px;
 }
 
 .card3{
     background-color:#8cb369 ;
-    padding: 20px;
 }
 
 @media (min-width: 768px){
@@ -62,13 +78,23 @@ ul li a{
     }
     .card-grid{
     flex-direction: row;
+    justify-content: space-between;
     }
-
     .card{
-        flex-grow: 1;
+        flex-basis: 30%;
+    }
+    .links{
+        flex-direction: row;
     }
 }
 
 footer{
     text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #fffcf2;
+}
+
+.card:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
